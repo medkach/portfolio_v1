@@ -1,0 +1,22 @@
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        Home
+      </mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+
+    <mat-card-content>
+      <div class="example-viewport" cdkVirtualScrollingElement>
+        <div class="example-header">Content before</div>
+        <cdk-virtual-scroll-viewport itemSize="30">
+          <div *cdkVirtualFor="let item of items" >{{item}}</div>
+        </cdk-virtual-scroll-viewport>
+        <div class="example-footer">Content after</div>
+      </div>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
