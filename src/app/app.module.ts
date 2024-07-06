@@ -34,6 +34,8 @@ import {
   CdkVirtualScrollableElement,
   CdkVirtualScrollViewport
 } from "@angular/cdk/scrolling";
+import { RagComponent } from './rag/rag.component';
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import {
     PayementsComponent,
     StudentsComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    RagComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +71,8 @@ import {
     CdkVirtualScrollViewport,
     CdkFixedSizeVirtualScroll,
     CdkVirtualForOf,
-    CdkVirtualScrollableElement
+    CdkVirtualScrollableElement,
+    MatProgressBarModule
   ],
   providers: [
     provideAnimationsAsync(),AuthGuard,AuthorizationGuard

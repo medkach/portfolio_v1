@@ -11,6 +11,7 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
 import {AdminTemplateComponent} from "./admin-template/admin-template.component";
 import {AuthGuard} from "./guards/auth.guard";
 import {AuthorizationGuard} from "./guards/authorization.guard";
+import {RagComponent} from "./rag/rag.component";
 
 const routes: Routes = [
   {path:"",component:LoginComponent},
@@ -25,7 +26,7 @@ const routes: Routes = [
   {path:"loadPayments",component:LoadPayementsComponent,canActivate:[AuthorizationGuard],data:{roles:['ADMIN']}},
   {path:"students",component:StudentsComponent},
   {path:"payments",component:PayementsComponent},
-  {path:"dashboard",component:DashboardComponent}]}
+  {path:"dashboard",component:DashboardComponent},{path:"rag",component:RagComponent}]}
 
 
 
